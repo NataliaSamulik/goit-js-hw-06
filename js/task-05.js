@@ -5,4 +5,8 @@ input.addEventListener('input', inputChange);
 
 function inputChange(event) {
   span.textContent = event.currentTarget.value;
+
+  if (span.textContent === '') {
+    span.textContent = 'Anonymous';
+  }
 }

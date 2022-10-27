@@ -1,9 +1,11 @@
-const navEl = document.querySelector('#categories');
-const navItemEl = navEl.querySelectorAll('.item');
+const navEl = document.querySelector("#categories");
+const navItems = navEl.querySelectorAll(".item");
 
-console.log(`Number of categories: ${navItemEl.length}`);
+console.log(`Number of categories: ${navItems.length}`);
 
-for (let i = 0; i < navItemEl.length; i += 1) {
-  console.log(`Category: ${navItemEl[i].querySelector('h2').textContent}`);
-  console.log(`Elements: ${navItemEl[i].querySelectorAll('li').length}`);
+for (const navItem of navItems) {
+  console.log(`Category: ${navItem.querySelector("h2").textContent}`);
+  console.log(`Elements: ${navItem.querySelectorAll("li").length}`);
 }
+
+
